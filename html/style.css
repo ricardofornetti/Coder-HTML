@@ -543,3 +543,50 @@ figcaption{
         background-position:center;        
     }
 }
+
+/*ANIMACIONES*/
+
+.animaciones {
+    width: 250px;
+    height: 250px;
+    background-color:black;
+}
+
+/* Fotogramas - keyframes */
+
+.animaciones:hover {
+    /* animation-name 
+    animation-duration */
+    /* kebah-case , camelCase*/
+    animation: cambiaForma 4s;
+    animation-iteration-count: infinite;
+}
+
+/* Fotogramas de la animación */
+
+@keyframes cambiaForma {
+    0% {
+        
+        border: 3px solid rgb(223, 42, 42);
+    }
+
+    25% {        
+        border: 5px solid red;
+        }
+
+    50% {
+        border-radius: 50%;
+        border: 7px solid black;        
+    }
+
+    75%{
+        border: 5px solid yellow;       
+    }
+
+  
+    100% {
+        border: 3px solid rgb(248, 248, 60);     
+       
+    }
+
+}
